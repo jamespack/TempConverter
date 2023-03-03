@@ -1,0 +1,19 @@
+namespace TempConverter
+{
+
+	[default_interface]
+	runtimeclass MainViewModel : Microsoft.UI.Xaml.Data.INotifyPropertyChanged
+	{
+		MainViewModel();
+		String InputDegrees;
+		Boolean IsCelciusInput;
+		String Result;
+		String ResultUnit;
+		Int32 Minimum;
+		Int32 Maximum;
+		Int32 CurrentValue;
+		void UnitSelection_SelectionChanged(IInspectable sender, Microsoft.UI.Xaml.Controls.SelectionChangedEventArgs e);
+		void Slider_ValueChanged(IInspectable sender, Microsoft.UI.Xaml.Controls.Primitives.RangeBaseValueChangedEventArgs e);
+
+	}
+}
